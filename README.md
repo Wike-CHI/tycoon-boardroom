@@ -22,12 +22,32 @@
 2. **多角度剖析** — 五位大佬从各自视角分析，允许反驳和冲突
 3. **收敛方案** — 1-3 条明天就能执行的具体行动建议
 
+## 项目结构
+
+```
+skills/
+├── tycoon-boardroom/              # 主技能
+│   ├── SKILL.md
+│   └── references/                # 马云/马斯克/黄仁勋详细档案
+│       ├── elon-musk-profile.md
+│       ├── jack-ma-profile.md
+│       └── jensen-huang-profile.md
+├── pony-ma-perspective/           # 马化腾完整档案（被 tycoon-boardroom 引用）
+│   ├── SKILL.md
+│   └── references/research/       # 写作/对话/表达DNA/外部视角/决策/时间线
+├── lei-jun-perspective/           # 雷军完整档案（被 tycoon-boardroom 引用）
+│   ├── SKILL.md
+│   └── references/research/
+└── bill-gates-perspective/        # 比尔·盖茨档案（可替换成员）
+    ├── SKILL.md
+    └── references/research/
+```
+
 ## 安装
 
 ```bash
-# 将 SKILL.md 复制到 Claude Code 技能目录
-mkdir -p ~/.claude/skills/tycoon-boardroom
-cp SKILL.md ~/.claude/skills/tycoon-boardroom/
+# 复制整个 skills 目录到 Claude Code 技能目录
+cp -r skills/* ~/.claude/skills/
 ```
 
 ## 使用
