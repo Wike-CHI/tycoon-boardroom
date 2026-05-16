@@ -34,7 +34,7 @@ skills/
 │       └── jensen-huang-profile.md
 ├── pony-ma-perspective/           # 马化腾完整档案（被 tycoon-boardroom 引用）
 │   ├── SKILL.md
-│   └── references/research/       # 写作/对话/表达DNA/外部视角/决策/时间线
+│   └── references/research/
 ├── lei-jun-perspective/           # 雷军完整档案（被 tycoon-boardroom 引用）
 │   ├── SKILL.md
 │   └── references/research/
@@ -43,12 +43,21 @@ skills/
     └── references/research/
 ```
 
-## 安装
+## 一键安装
+
+**macOS / Linux:**
 
 ```bash
-# 复制整个 skills 目录到 Claude Code 技能目录
-cp -r skills/* ~/.claude/skills/
+curl -fsSL https://raw.githubusercontent.com/Wike-CHI/tycoon-boardroom/main/install.sh | bash
 ```
+
+**Windows (PowerShell):**
+
+```powershell
+irm https://raw.githubusercontent.com/Wike-CHI/tycoon-boardroom/main/install.ps1 | iex
+```
+
+安装完成后，在 Claude Code 中输入 `/tycoon-boardroom` 即可触发。
 
 ## 使用
 

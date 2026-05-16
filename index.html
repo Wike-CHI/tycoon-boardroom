@@ -796,19 +796,27 @@
     <p class="section-desc">这是一个 Claude Code Skill，安装只需要一个命令。</p>
   </div>
 
-  <div class="install-box reveal">
+  <div class="install-box reveal" style="max-width:100%">
     <div class="install-header">
       <div class="install-dots">
         <span></span><span></span><span></span>
       </div>
-      &nbsp; Terminal
+      &nbsp; macOS / Linux
     </div>
     <div class="install-body">
-<pre><span class="comment"># 一行命令安装</span>
-<span class="cmd">claude</span> <span class="flag">install-skill</span> tycoon-boardroom
+<pre><span class="cmd">curl</span> <span class="flag">-fsSL</span> https://raw.githubusercontent.com/Wike-CHI/tycoon-boardroom/main/install.sh | <span class="cmd">bash</span></pre>
+    </div>
+  </div>
 
-<span class="comment"># 或者手动复制 SKILL.md 到技能目录</span>
-<span class="cmd">cp</span> SKILL.md ~/.claude/skills/tycoon-boardroom/</pre>
+  <div class="install-box reveal" style="max-width:100%;margin-top:1rem;">
+    <div class="install-header">
+      <div class="install-dots">
+        <span></span><span></span><span></span>
+      </div>
+      &nbsp; Windows PowerShell
+    </div>
+    <div class="install-body">
+<pre><span class="cmd">irm</span> https://raw.githubusercontent.com/Wike-CHI/tycoon-boardroom/main/install.ps1 | <span class="cmd">iex</span></pre>
     </div>
   </div>
 
@@ -816,15 +824,15 @@
     <div class="step-row">
       <div class="step-num">1</div>
       <div class="step-content">
-        <h4>安装完成后，在 Claude Code 中直接触发</h4>
-        <p>输入 <code>/tycoon-boardroom</code> 然后描述你的问题，或在对话中说"让大佬们帮我看看"</p>
+        <h4>运行上面的命令，一键安装全部技能</h4>
+        <p>自动下载 tycoon-boardroom 及其依赖的马化腾、雷军、比尔·盖茨档案到 <code>~/.claude/skills/</code></p>
       </div>
     </div>
     <div class="step-row">
       <div class="step-num">2</div>
       <div class="step-content">
-        <h4>描述你的困境</h4>
-        <p>任何你拿不定主意的事——职业选择、产品方向、团队管理、创业决策。越具体越好。</p>
+        <h4>在 Claude Code 中触发</h4>
+        <p>输入 <code>/tycoon-boardroom</code> 然后描述你的问题，或在对话中说"让大佬们帮我看看"</p>
       </div>
     </div>
     <div class="step-row">
